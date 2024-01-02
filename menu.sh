@@ -1645,32 +1645,37 @@ PROXIMO(){
 mostrar_menu() {
 	clear
 	printf "\n"
-	echo -e "${GREEN}==============================================================================================${STD}"
-    echo -e " ${GREEN}   MENU PRINCIPAL  .:SERVER.OK:. by NNN GROUPS for Linux with DirectAdmin & CPanel License ${STD} "
-	echo -e "${GREEN}==============================================================================================${STD}"
-	echo "0) Salir de la aplicacion"
-	echo "1) Informacion y Resumen del servidor"
-	echo "2) Ping a las IP del servidor || Validar RBL"
-	echo "3) Hacer espacio en disco del servidor"
-	echo "4) Detener spammers || limpiar QUEUE de emails || Habilitar SpamAsassins"
+        
+echo -e "${GREEN}███    ███ ██   ██ ███████     ██      ██  ██████ ███████ ███    ██ ███████ ███████ ${STD}"
+echo -e "${GREEN}████  ████ ██   ██ ██          ██      ██ ██      ██      ████   ██ ██      ██  ${STD}"    
+echo -e "${GREEN}██ ████ ██ ███████ ███████     ██      ██ ██      █████   ██ ██  ██ ███████ █████  ${STD}" 
+echo -e "${GREEN}██  ██  ██      ██      ██     ██      ██ ██      ██      ██  ██ ██      ██ ██    ${STD}"  
+echo -e "${GREEN}██      ██      ██ ███████     ███████ ██  ██████ ███████ ██   ████ ███████ ███████ ${STD}"
+                                                                                    
+                                                                                                   
+	echo "0) Keluar dari aplikasi"
+	echo "1) Informasi dan Ringkasan Server"
+	echo "2) Ping ke IP server || Validasi RBL"
+	echo "3) Buat ruang disk server"
+	echo "4) Hentikan pelaku spam || hapus ANTRIAN email || Aktifkan SpamAssassin"
 	echo "5) Instalar let's encryt"
-	echo "6) Setear FECHA/HORA  || Habilitar NTPD "
-	echo "7) NGINX como proxy reverso (DirectAdmin)"
-	echo "8) Purgar QUEUE entera de Emails"
+	echo "6) Tetapkan TANGGAL/WAKTU || Aktifkan NTPD "
+	echo "7) NGINX sebagai proksi terbalik (DirectAdmin)"
+	echo "8) Bersihkan Seluruh ANTRIAN Email"
 	echo "9) Instalar CSF Firewall"
-	echo "10) Reparar todas la Bases de Datos || Optimizar my.cnf || Analizar my.cnf del SQL"
-	echo "11) IMAPSync de a 10 cuentas"
-	echo "12) Permitir links temporales mediante /~ (DirectAdmin)"
-	echo "13) Renovar Licencia DirectAdmin"
-	echo "14) WGET con autenticación FTP"
-	echo "15) Instalar MALDET y CLAMAV || Ejecutar Antivirus"
-	echo "16) Recontar Cuotas de un Usuario en Directadmin"
-	echo "17) FIX - Berkeley DB error: /var/spool/exim/db/callout en EXIM"
-	echo "18) Instalar DIRECTADMIN | WHM/CPANEL (Servidor Limpio)"
-	echo "19) Mail de Testing con SWAKS."
-	echo "20) ESTABILIZAR Servidor Completo."
-	echo "21) OPTIMIZAR Servidor Completo."
-	echo "22) ACTUALIZAR Servidor Completo."
+	echo "10) Perbaiki semua Database || Optimalkan my.cnf || Parsing my.cnf dari SQL"
+	echo "11) IMAPSync untuk 10 akun"
+	echo "12) Izinkan tautan sementara menggunakan /~ (DirectAdmin)"
+	echo "13) Perpanjang Lisensi DirectAdmin"
+	echo "14) WGET dengan otentikasi FTP"
+	echo "15) Instal MALDET dan CLAMAV || Jalankan Antivirus"
+	echo "16) Hitung Ulang Kuota Pengguna di Directadmin"
+	echo "17) PERBAIKI - Kesalahan Berkeley DB: /var/spool/exim/db/callout di EXIM"
+	echo "18) Instal DIRECTADMIN | WHM/CPANEL (Server Bersih)"
+	echo "19) Menguji email dengan SWAKS."
+	echo "20) STABILISASI Server Penuh."
+	echo "21) OPTIMALKAN Server Lengkap."
+	echo "22) PERBARUI Server Penuh."
 	printf "\n"
 	echo -e "${GREEN}----------------------------------------------------------------------------------------------${STD}"
 	printf "\n"
@@ -1681,7 +1686,7 @@ mostrar_menu() {
 # Exit when user the user select 3 form the menu option.
 leer_opcion(){
 	local choice
-	read -p "SELECCIONA un NUMERO para tu OPCION [ 1 - 20 ]  y luego presiona ENTER: " choice
+	read -p "PILIH NOMOR untuk OPSI Anda [ 1 - 20 ] lalu tekan ENTER: " choice
 	printf "\n"
 	case $choice in
 		0) clear ; exit 0 ;;
