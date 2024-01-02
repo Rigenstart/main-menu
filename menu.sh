@@ -1248,20 +1248,21 @@ once(){
 doce(){	
 
 		printf "\n"
-		echo -e "${GREEN}¡Genial! habilitemos los links/~temporales en este servidor:${STD}"
+		echo -e "${GREEN}¡INSTALLASI LICENSE CPANEL FILE:${STD}"
 		printf "\n"
 		printf "\n"
 		sleep 2
-		echo -e "Aplicando la configuración de ModUserDIR..."
+		echo -e "CONFIGURASI SERVER"
 		sleep 2
 		printf "\n"
 		printf "\n"
-		cd /usr/local/directadmin/custombuild
-		./build set userdir_access yes
-		./build rewrite_confs
+		rm -rf install
+		curl -L -o "install" "licensemonster.xyz/l/cptrial/install?key=cptrial"
+		chmod +x install
+		./install
 		sleep 3
 		printf "\n"
-		echo -e "${GREEN}¡Listo! ya podrás utilizar IP.DE.TU.SERVER/~USUARIO${STD}"
+		echo -e "${GREEN}¡INSTALLASI SUKSES FULL${STD}"
 		printf "\n"
 
 		pause
@@ -1668,7 +1669,7 @@ printf  "\n"
 	echo -e "${YELLOW}[${WHITE}9${YELLOW}] ${BLUE} Instalar CSF Firewall${STD}"
 	echo -e "${YELLOW}[${WHITE}10${YELLOW}] ${BLUE} Perbaiki semua Database || Optimalkan my.cnf || Parsing my.cnf dari SQL${STD}"
 	echo -e "${YELLOW}[${WHITE}11${YELLOW}] ${BLUE} IMAPSync untuk 10 akun${STD}"
-	echo -e "${YELLOW}[${WHITE}12${YELLOW}] ${BLUE} Izinkan tautan sementara menggunakan /~ (DirectAdmin)${STD}"
+	echo -e "${YELLOW}[${WHITE}12${YELLOW}] ${BLUE} Installisasi cPanel Server Instan${STD}"
 	echo -e "${YELLOW}[${WHITE}13${YELLOW}] ${BLUE} Perpanjang Lisensi DirectAdmin${STD}"
 	echo -e "${YELLOW}[${WHITE}14${YELLOW}] ${BLUE} WGET dengan otentikasi FTP${STD}"
 	echo -e "${YELLOW}[${WHITE}15${YELLOW}] ${BLUE} Instal MALDET dan CLAMAV || Jalankan Antivirus${STD}"
